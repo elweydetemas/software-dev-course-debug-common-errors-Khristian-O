@@ -27,7 +27,7 @@ Think about which debugging methods you found most useful and how you might appl
 console.log("Welcome to the bootcamp
 
 // What’s Wrong?
-
+//This is a syntax error because the string is not properly closed with a quotation mark. The console.log statement is missing the closing quotation mark and parenthesis. This would generate a syntax error when the code is executed, preventing the program from running as intended.
 
 // Program B
 // Description:
@@ -40,8 +40,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // What’s Wrong?
-
-
+// The last value in the array is a string ("eight"), which cannot be multiplied by 2. This causes a runtime error when the code attempts to perform the multiplication operation on a non-numeric value. To fix this, we can ensure that all elements in the array are numbers or handle the case where an element is not a number.
 
 // Program C (Logic Error)
 // Description:
@@ -60,3 +59,4 @@ function isPrime(num) {
 console.log(isPrime(7)); // Expected true but gets false
 
 // What’s Wrong?
+// The logic in the isPrime function is flawed. The function returns false for a number that is not prime, but it incorrectly returns true when it finds a divisor, which is the opposite of what we want. The return values should be swapped to correctly indicate whether a number is prime or not.
